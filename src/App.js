@@ -11,7 +11,7 @@ class App extends Component{
         "name": "Ryan Florence",
         "email": "ryan@reacttraining.com",
         "avatarURL": "http://localhost:5001/ryan.jpg"
-      },
+      }, 
       {
         "id": "michael",
         "name": "Michael Jackson",
@@ -29,7 +29,7 @@ class App extends Component{
   render(){
     return <div>
             <ListContacts contacts={this.state.contacts} />
-          </div>
+           </div>
   }
 
 }
