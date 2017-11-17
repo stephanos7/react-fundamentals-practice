@@ -28,8 +28,8 @@ class App extends Component{
   }
   deleteContact = (contactClicked) => {
     this.setState((state) => 
-        ({contacts : this.state.contacts.filter((previousStateContact) => 
-        previousStateContact.id !== contactClicked.id)
+        ({contacts : this.state.contacts.filter((contact) => 
+        contact.id !== contactClicked.id)
        }))
   }
 
