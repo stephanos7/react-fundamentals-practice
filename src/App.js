@@ -27,7 +27,7 @@ class App extends Component{
     ]
   }
   deleteContact = (contactClicked) => {
-    this.setState((state) => 
+    this.setState((prevState) => 
         ({contacts : this.state.contacts.filter((contact) => 
         contact.id !== contactClicked.id)
        }))
