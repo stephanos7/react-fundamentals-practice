@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 
 class ListContacts extends Component{
+  static propTypes = {
+    contacts : PropTypes.array.IsRequired,
+    onDeleteContact : PropTypes.func.IsRequired
+  }
+
   render(){
     return (
       <ol className="contact-list">
