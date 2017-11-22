@@ -18,7 +18,7 @@ class ListContacts extends Component{
   }
 
   render(){
-    const {contacts, onDeleteContact } = this.props;
+    const {contacts, onDeleteContact, onCreateContact } = this.props;
     const {query} = this.state;
 
     let filteredContacts;
@@ -41,6 +41,7 @@ class ListContacts extends Component{
             value={query}
             onChange={(event) => this.updateQuery(event.target.value)}
           />
+        <a href="#create" className="add-contact" onClick={onCreateContact}>Add</a>
         </div>
         <ol className="contact-list">
           {filteredContacts.map((contact) => (
